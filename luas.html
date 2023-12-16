@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hitung sebuah lingkaran</title>
+     <script>
+        function hitung() {
+            const jari_jari =document.getElementById('jari_jari').value;
+            const operator = document.getElementById('operator').value;
+            let hasil = 0;
+
+            console.log( parseInt (jari_jari) * parseInt (operator ) );
+
+            if (operator == 'luas') {
+                hasil = 3.14 * (jari_jari**2);
+            } else  {
+                hasil = 2 * 3.14 * jari_jari;
+            }
+            document.getElementById('output').innerHTML = hasil;
+        }
+    </script>
+</head>
+<body>
+    <h1>hitung sebuah lingkaran</h1>
+    jari jari
+    <input type="number" id="jari_jari"><br>
+
+    operator
+
+    <input type="number" id="operator">
+   
+
+    <button type="button" onclick="hitung()">hitung nilai</button>
+    <hr>
+    <h3 id="output"></h3>
+   
+</body>
+</html>

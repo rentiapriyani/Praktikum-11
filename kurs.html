@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <script>
+        function hitung_rupiah(){
+            const jumlah_dollar = document.getElementById("jumlah_dollar").value
+            const Kurs = 15600;
+
+            console.log( parseInt (jumlah_dollar) * parseInt (nilai_rupiah ) );
+
+
+            const nilai_rupiah = jumlah_dollar * Kurs;
+
+            document.getElementById("nilai_rupiah").innerText =  "Rp."+nilai_rupiah;
+        }
+    </script>
+    
+</head>
+<body>
+   <h1>Masukan jumlah Dollar</h1> 
+   
+   <input type="number" id="jumlah_dollar" 
+   
+   onchange="hitung_rupiah()">
+    
+   
+   <p>nilai dalam Rupiah: 
+    
+    <span id="nilai_rupiah"></span></p>
+
+    <!-- kode javascript -->
+    
+</body>
+</html>
